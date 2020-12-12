@@ -1,0 +1,106 @@
+body{
+  background-color: #000;
+  font-family: Geometria;
+}
+.wrap{
+  width: 100%;
+  display: grid;
+  grid-template-columns: .62fr 1fr .62fr;
+  grid-template-rows: .74fr .26fr;
+}
+.bottom {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  margin-top: 50vw;
+}
+.left{
+  display: grid;
+}
+.center{
+  display: grid;
+}
+.right{
+  display: grid;
+}
+.ship{
+  transform: translate(-50%, 0);
+  left: 50%;
+  position: fixed;
+  top: 3vw;
+  z-index: 3;
+}
+.ship img{
+  height: 45vw;
+  max-height: 50%;
+  width: auto;
+}
+.belt{
+  position: absolute;
+  top: 0;
+  width: 44.766vw;
+  height: 1060vw;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin: auto;
+  background-image: url('../images/c-belt.svg');
+  background-size: contain;
+  z-index: 2;
+}
+.panel{
+  width: 14.531vw;
+  height: 31.172vw;
+  margin-top: 3vw;
+  margin-left: 6.719vw;
+  margin-bottom: 42.969vw;
+  background: #484848;
+  border-radius: 0.938vw;
+}
+.plates{
+  margin-left: 12vw;
+  margin-top: -28vw
+}
+.electropanel{
+  margin-left: 6.719vw;
+  margin-top: 5vw;
+  margin-bottom: 33.438vw;
+}
+.panel-lever{
+  width: 15.703vw;
+  height: 12.969vw;
+  background: #484848;
+  border-radius: 1.172vw;
+  overflow: hidden;
+}
+.panel-lever{
+  display: block;
+  margin-left: 6.719vw;
+  margin-top: 109.063vw;
+}
+.panel-lever-c{
+  margin-left: 6.719vw;
+}
+.panel-lever-b{
+  width: 25.391vw;
+  height: 26.953vw;
+}
+.text{
+  color: white;
+  width: 5vw;
+  margin: 10vw 6.719vw;
+  /* margin-left: 6.719vw; */
+}
+.navigation{
+  margin-top: 97.188vw;
+  margin-left: 6.719vw;
+}
+h1{
+  font-size: 7.813vw;
+}
+h2{
+  font-size: 1.875vw;
+}
+.stars{
+  position: relative;
+  height: 100vh;
+}

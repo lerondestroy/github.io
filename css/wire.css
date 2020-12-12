@@ -1,0 +1,94 @@
+.wire-a, .wire-a::before, .wire-a::after, .w2-v, .w2-h, .w3 > *,.wire3-a::after, .wire4-a {
+  animation: gradient-slide 3s ease infinite;
+}
+.wire-a{
+  width: 27.188vw;
+  height: 0.313vw;
+}
+.wire-a::before{
+  background-color: inherit;
+  display: block;
+  content: '';
+  width: 0.313vw;
+  height: 37.813vw;
+  margin-left: 27.2vw;
+}
+.wire-a::after{
+  background-color: inherit;
+  display: block;
+  content: '';
+  width: 5vw;
+  height: 0.313vw;
+  margin-left: 27.2vw;
+}
+.wa-b{
+  margin-top:1.211vw;
+  margin-left:-1.211vw;
+}
+.wa-c{
+  margin-left:-2.422vw
+}
+.w2{
+  height: 84.375vw;
+}
+.wire2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 84.375vw;
+}
+.w2-v {
+  width: 0.313vw;
+  display: block;
+  position: absolute;
+}
+.w2-h {
+  height: 0.313vw;
+  display: block;
+  position: absolute;
+}
+.w21{
+  margin-top: -86.237vw;
+  margin-left: -1.742vw;
+}
+.w22{
+  margin-top: -86.237vw;
+  margin-left: -3.484vw;
+}
+#w2-1 {
+  width: 30%;
+  bottom: 0;
+  left: 0;
+}
+#w2-2 {
+  left: 30%;
+  bottom: 0;
+  height: 40%;
+}
+#w2-3 {
+  width: 31%;
+  left: 30%;
+  top:60%
+}
+#w2-4 {
+  left: 60%;
+  top: 0;
+  height: 60%;
+}
+.w3{
+  margin: 0px 10.156vw;
+}
+.wire3-a{
+  width: 0.313vw;
+  height: 7.813vw;
+}
+.wire3-a::after{
+  background-color: inherit;
+  display: block;
+  content: '';
+  width: 37.813vw;
+  height: 0.313vw;
+}
+.wa3-b{
+  margin: -5.859vw 1.563vw;
+}

@@ -1,0 +1,65 @@
+@keyframes gradient-slide {
+  50% {
+    box-shadow: 10px 10px 10px 10px white inset;
+  }
+}
+@keyframes button-blink {
+  50%{background: #fff;}
+}
+@keyframes turning {
+  100%{transform: rotate(360deg);}
+}
+@keyframes slid {
+  50%{transform: translateY(2vw);}
+}
+@keyframes graph-line {
+  50%{height: 1vw; background-color: #303030;}
+}
+@keyframes small-blink {
+  10%{transform: translateY(-.2vw);}
+  50%{transform: translateY(.2vw);}
+  90%{transform: translateY(0);}
+}
+@keyframes nav-blink {
+  50%{background: #5C4728;}
+  80%{background: #C89854;}
+}
+@keyframes navigat {
+  30%{transform: scaleY(.6);}
+  50%{transform: translateY(3vw);}
+}
+@keyframes lever-a-w {
+  50%{transform: translateX(3vw)scale(1.1);}
+}
+@keyframes lever-a-g {
+  50%{transform: translateX(1vw) scaleX(.7);}
+  100%{transform: scaleX(1);}
+}
+@keyframes lever-b {
+  0%{transform: translateX(0vw);}
+  20%{transform: translateX(5vw) scaleX(.3);}
+  50%{transform: translateX(10vw);}
+  70%{transform: translateX(5vw) scaleX(.3);}
+  100%{transform: translateX(0vw);}
+}
+@keyframes lever-b-g{
+  0%{transform: translateX(0vw);}
+  20%{transform: translateX(1vw) scaleX(.3);}
+  50%{transform: translateX(2vw);}
+  70%{transform: translateX(1vw) scaleX(.3);}
+  100%{transform: translateX(0vw);}
+}
+@keyframes starr {
+  0%{opacity: 0}
+  20%{opacity: .2}
+  40%{opacity: .6}
+  60%{opacity: .9}
+  100%{opacity: 0}
+}
+@keyframes starr2 {
+  0%{opacity: .4}
+  20%{opacity: .2}
+  40%{opacity: .2}
+  60%{opacity: .9}
+  100%{opacity: .4}
+}

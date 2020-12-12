@@ -1,0 +1,184 @@
+@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+	.w1,.w2,.w3{
+		display: none;
+	}
+	.wrap > * > *{
+		margin: 0;
+	}
+	.left > *,.right > *{
+		transform: scale(1.5);
+		margin: 0;
+	}
+	.wrap > *{
+		display: block;
+	}
+	.right{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 4;
+	}
+	.left{
+		top: 0;
+		z-index: 4;
+	}
+	.text{
+		margin-left: 30vw;
+		display: flex;
+		z-index: 4;
+		transform: scale(1);
+	}
+	.text:first-of-type{
+		margin-top: 5vh;
+	}
+	#t-b{
+		margin-top: 70vh;
+	}
+	.belt{
+		width: 60%;
+		height: 1020vh;
+	}
+	.ship{
+		top: 25%;
+	}
+	.ship img{
+		height: 80vw;
+	}
+	h1{
+		font-size: 140px;
+	}
+	h2{
+		padding: 2vw;
+		font-size: 40px;
+	}
+	.panel{
+		margin-left: 10%;
+		margin-top: 40vh;
+	}
+	.electropanel{
+		margin-left: 25%;
+		margin-top: 80%;
+	}
+	.panel-lever-c{
+		margin-top: 30vh;
+	}
+	.panel-lever-b{
+		margin-top: 15vh;
+		margin-left: -6vw;
+	}
+	.plates{
+		margin-left: 20%;
+		margin-top: 90vh;
+	}
+	.panel-lever{
+		margin-left: 20%;
+		margin-top: 160vw;
+	}
+	.navigation{
+		margin-left: 20%;
+		margin-top: 160vh;
+	}
+	.bottom{
+		margin-top: 200vw;
+	}
+}
+	@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+		.w1,.w2,.w3{
+			display: none;
+		}
+		.wrap > * > *{
+			margin: 0;
+		}
+		.left > *,.right > *{
+			transform: scale(1.5);
+		}
+		.wrap > *{
+			display: block;
+		}
+		.wrap{
+			width: 100%;
+		}
+		.right{
+			position: absolute;
+			top: 0;
+		}
+		.bottom{
+			margin-top: 100vh;
+		}
+		.belt{
+			width: 60%;
+			left: 70%;
+			height: 1050vh;
+		}
+		.ship{
+			top: 25%;
+			left: 70%;
+		}
+		.ship img{
+			height: 60vw;
+		}
+		.text{
+			margin-left: 10vw;
+			margin-top: 10vh;
+		}
+		#t-b{
+			margin-top: 70vh;
+		}
+		.panel{
+			margin-left: 40%;
+			margin-top: 20vh;
+		}
+		.electropanel{
+			margin-left: 40%;
+			margin-top: 30vh;
+		}
+		.panel-lever-c{
+			margin-top: 20vh;
+		}
+		.panel-lever-b{
+			margin-top: 15vh;
+			margin-left: -6vw;
+		}
+		.plates{
+			margin-left: 60%;
+			margin-top: 80vh;
+		}
+		.panel-lever{
+			margin-left: 50%;
+			margin-top: 140vw;
+		}
+		.navigation{
+			margin-left: 60%;
+			margin-top: 160vh;
+		}
+		.exit{
+			height: 127vw;
+			overflow: hidden;
+		}
+		.exit img{
+			margin-left: 36%;
+			transform: scale(2.5);
+		}
+	}
+@media all and (device-width: 2560px){
+	.ship img{
+		height: 35vw;
+	}
+	.stars-bg{
+		background-size: 200% 200%;
+	}
+	.stars2-bg{
+		background-size: 200% 200%;
+	}
+	}
+@media all and (max-device-width: 1024px) and (orientation:landscape){
+	.ship{
+		top: 20vh;
+	}
+	.stars-bg{
+		background-size: 200% 200%;
+	}
+	.stars2-bg{
+		background-size: 200% 200%;
+	}
+}

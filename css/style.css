@@ -1,0 +1,308 @@
+:root {
+	--colorRed: #FF0000;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+body, body *, body *::before, body *::after {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 72px; 
+	font-weight: 500;
+	margin-bottom: 0.2em;
+}
+
+.container {
+	background: #101010 url(../img/bg.svg) center center no-repeat;
+	overflow: hidden;
+	position: relative;
+	font: 36px/1.16 Roboto;
+	color: #ffffff;
+	padding: 44px 78px 57px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+	width: 1680px;
+	height: 1420px;
+	margin: 0 auto;
+}
+
+.centered {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.has-hover {
+	transition: .3s;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.base {
+	z-index: 2;
+	pointer-events: none;
+}
+
+/* 4 круга вокруг часов */
+.outer-1 {
+	animation: rotation 50s linear infinite;
+}
+
+.outer-2 {
+	animation: rotation 40s linear reverse infinite;
+}
+
+.outer-3 {
+	animation: rotation 25s linear infinite;
+}
+
+.outer-4 {
+	animation: rotation 30s linear infinite;
+}
+
+.outer-4-lines {
+	animation: rotation 30s linear reverse infinite;
+}
+
+/* Ромбики */
+.stars {
+	transform: scale(.5) translate(-100%, -100%);
+	animation: stars 8s infinite; 
+	transform-origin: center center;
+}
+
+/* Текст снизу (и слева и справа) */
+.text-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Элементы с наведением */
+.axis	{
+	border: 1px solid #BCBCBC;	
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: linear-gradient(136.49deg, #C4C4C4 15.38%, #828282 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.axis::before {
+	content: '';
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	box-shadow: inset 2px 4px 4px #B0D1D8;
+	background: #CCF6FF;
+	border: 0.5px solid #DBF8FF;
+	transition: .3s;
+}
+
+.axis:hover::before {
+	background: var(--colorRed);
+	box-shadow: none;
+	border-color: var(--colorRed);
+}
+
+.logo {
+	z-index: 1;
+	transition: .3s;
+	transform: translate(-50%, 160px);
+	cursor: pointer;
+}
+
+.logo:hover {
+	filter: grayscale(100%) brightness(300%);
+}
+
+/* Стрелки */
+.arrow-minutes {
+	position: absolute;
+	bottom: -24px;
+	right: -40px;
+	animation: rotation-arrow 40s linear infinite; 
+	transform-origin: calc(100% - 40px) calc(100% - 24px);
+}
+
+.arrow-hours {
+	position: absolute;
+	bottom: -22px;
+	right: -74px;
+	animation: rotation-arrow 80s linear infinite; 
+	transform-origin: calc(100% - 74px) calc(100% - 22px);
+}
+
+.arrow-seconds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: rotation-arrow 30s steps(60, end) infinite; 
+	transform-origin: left top;
+}
+
+.arrow-left {
+	position: absolute;
+	bottom: -12px;
+	right: 118px;
+	animation: rotation-arrow 20s linear infinite; 
+	transform-origin: 35px 56px;
+}
+
+.arrow-right {
+	position: absolute;
+	bottom: -12px;
+	left: 118px;
+	animation: rotation-arrow 10s linear infinite; 
+	transform-origin: 31px 68px;
+}
+
+/* Цифровые часы */
+.digital {
+	z-index: 1;
+	font-weight: 50;
+	font-size: 44px;
+	line-height: 1;
+	width: 147px;
+	border: 2px solid white;
+	text-align: center;
+	transform: translate(-50%, calc(-50% - 183px));
+}
+
+.digital span {
+	animation: digital 1s infinite; 
+}
+
+/* Шкала в png */
+.scale {
+	width: 580px;
+}
+
+
+
+
+
+
+/* Анимации */
+@keyframes rotation {
+	from {
+		transform: translate(-50%, -50%) rotate(0);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@keyframes rotation-arrow {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes stars {
+	from {
+		transform:  scale(.5) translate(-100%, -100%);
+	}
+	to {
+		transform: scale(1.7) translate(-15%, -15%);opacity: 0;
+	}
+}
+
+@keyframes digital {
+	from {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	26% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 0;
+	}
+	76% {
+		opacity: 1;
+	}
+}
+
+
+
+/* Адаптация под разные экраны */
+@media (max-width: 1640px) {
+	.container {
+		width: 1440px;
+		height: 1532px;
+	}
+}
+
+@media (max-width: 1390px) {
+	.container {
+		width: 1366px;
+		height: 1612px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.container {
+		width: 1280px;
+		height: 1768px;
+	}
+}
+
+@media (max-width: 1240px) {
+	.container {
+		width: 1024px;
+		height: 1483px;
+	}
+}
+
+@media (max-width: 980px) {
+	.container {
+		width: 768px;
+		height: 1244px;
+		font-size: 24px;
+		padding: 46px 57px 64px;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+}
+
+@media (max-width:740px) {
+	.container {
+		width: 320px;
+		height: 1048px;
+		font-size: 18px;
+		padding: 25px 16px 30px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	.text-bottom {
+		display: block;
+	}
+
+	.text-bottom p + p {
+		margin-top: 10px;
+	}
+}

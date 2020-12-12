@@ -1,0 +1,361 @@
+.panel-buttons{
+  padding: 1.875vw;
+  width: 8.891vw;
+  height: 11.016vw;
+  flex-wrap:wrap;
+  display: flex;
+  /* column-count: 3; */
+}
+.button-simple{
+  /* display: block; */
+  border-radius: 100px;
+  margin: 0.4vw;
+  height: 2.109vw;
+  width: 2.109vw;
+  background: #202020;
+  animation: button-blink 3s infinite ease-in-out;
+}
+.panel-turns{
+  margin-left: 4.609vw;
+  margin-top: 7.031vw;
+  width: 8.672vw;
+  height: 11.016vw;
+  column-count: 4;
+}
+.turns{
+  width: 1.467vw;
+  height: 1.467vw;
+  margin-top: 0.634vw;
+  animation: turning 3s infinite;
+}
+.turns:nth-of-type(1){
+  margin-top: 0;
+}
+.rectangle{
+  display: block;
+  position: absolute;
+  width: 0.200vw;
+  height: 0.901vw;
+  background: #929292;
+  z-index: 1;
+  margin-left: 0.634vw;
+  margin-top: -0.1vw;
+}
+.circle{
+  display: block;
+  position: absolute;
+  width: 1.467vw;
+  height: 1.467vw;
+  background: #000;
+  border-radius: 100px;
+  z-index: 0;
+}
+.micro-p{
+  background: #1E1E1E;
+  color: gray;
+  width:7.578vw;
+  height: 3.906vw;
+  border-top: dashed 1.172vw;
+  border-bottom: dashed 1.172vw;
+}
+.micro-p:nth-child(2){
+  margin-top: 3vw;
+}
+.micro-p p{
+  margin: 1.328vw 0.313vw;
+  font-size: 0.5vw;
+  line-height: normal;
+  color: #322716;
+}
+.electronics{
+  display: inline-block;
+  width: 8.594vw;
+  height: 8.594vw;
+  background: #474747;
+}
+.el-in{
+  margin-top: 5.625vw;
+  margin-left: 0.469vw;
+  color: #CFCFCF;
+  z-index: 1;
+}
+.el-in img{
+  height: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+.el-in p{
+  font-size: 0.703vw;
+}
+.electronics::before{
+  display: block;
+  content: "";
+  width: 6.797vw;
+  height: 0.469vw;
+  background: #83653A;
+  margin: -0.391vw 0.8vw;
+}
+.electronics::after{
+  display: block;
+  content: "";
+  width: 6.797vw;
+  height: 0.469vw;
+  background: #83653A;
+  margin: 0.4vw 0.8vw;
+}
+.el-under{
+  margin: -8vw -0.469vw;
+  display: block;
+  width: 9.531vw;
+  height: 6.797vw;
+  background: #83653A;
+}
+.panel-lever-c{
+  height: 23.438vw;
+  width: 17.656vw;
+  background: #484848;
+  border-radius: 1.172vw;
+}
+.leverc{
+  padding: 2.188vw 0.781vw;
+}
+.l-c-black{
+  margin-left: 5.469vw;
+  position: absolute;
+  height: 1.875vw;
+  width: 7.813vw;
+  background: #000000;
+}
+.l-c-hand{
+  margin-top: 0.391vw;
+  margin-left: 5.859vw;
+  position: absolute;
+  height: 0.938vw;
+  width: 4.688vw;
+  background: #C4C4C4;
+  animation: lever-b-g 5s infinite;
+}
+.l-c-white{
+  margin-left: 0;
+  position: absolute;
+  height: 2.031vw;
+  width: 8.594vw;
+  border-radius: 0.781vw;
+  background: #FFFFFF;
+  animation: lever-b 5s infinite;
+}
+.lever-s{
+  width: 15.703vw;
+  height: 12.969vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lever{
+  width: 20%;
+  height: 40%;
+  margin-top: 3vw;
+  margin-left: 1vw;
+}
+.black{
+  width: 5.902vw;
+  height: 1.084vw;
+  background: #000000;
+}
+.hand{
+  margin-top: -0.859vw;
+  margin-left: 1.172vw;
+  width: 2.497vw;
+  height: 0.605vw;
+  background: #C4C4C4;
+  animation: lever-a-g 3s infinite;
+}
+.white{
+  margin-left: 1.172vw;
+  margin-top: -2.734vw;
+  width: 0.908vw;
+  height: 4.817vw;
+  background: #FFFFFF;
+  border-radius: 0.781vw;
+  animation: lever-a-w 3s infinite;
+}
+.bg{
+  margin-left: -2.1vw;
+  width: 25.391vw;
+  height: 26.953vw;
+}
+.slider{
+  position: absolute;
+  height: 1.563vw;
+  width: 1.563vw;
+  margin: 10vw -17.2vw;
+  animation: slid 3s infinite;
+}
+.slider:nth-child(2){
+  margin: 19vw -17.2vw;
+}
+.graphs{
+  margin: 0vw 0.6vw;
+  display: inline-flex;
+  flex-direction: row;
+}
+.line{
+  margin-left: 0.313vw;
+  width: 0.547vw;
+  height: 5.156vw;
+  background: #7B7B7B;
+  animation: graph-line 6s infinite;
+}
+.line:first-of-type{
+  margin-left: 0.781vw;
+}
+.buttons-small{
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0 1.8vw;
+  margin-top: 2.5vw;
+  margin-bottom: 1vw;
+}
+.btn-s{
+  width: 0.469vw;
+  height: 0.469vw;
+  background: #7B7B7B;
+  border-radius: 7.813vw;
+  animation: small-blink 3s linear infinite;
+}
+.btn-s:nth-child(2){
+  margin: 0 0.391vw;
+}
+.lever2-buttons{
+  margin: -22vw 14vw;
+  width: 5vw;
+  height: 8.047vw;
+}
+.btns1-2{
+  display: flex;
+  flex-direction: row;
+  width: 5vw;
+  height: 8.047vw;
+}
+.nav-btns{
+  justify-content: space-evenly;
+  width: 16.563vw;
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 1.563vw;
+}
+.btn1-nav{
+  height: 2.734vw;
+  width: 2.734vw;
+  border-radius: 100px;
+  background: #83653A;
+  animation: nav-blink 3s alternate infinite;
+}
+.nav-screen{
+  width: 16.563vw;
+  height: 33.906vw;
+  background: #484848;
+  border-radius: 10px;
+}
+.mirror{
+  position: absolute;
+  margin: 3.125vw 1.563vw;
+  height: 27.656vw;
+  width: 13.516vw;
+  border-radius: 10px;
+  background: #1F1B1B;
+}
+.nav-circle{
+  position: absolute;
+  height: 3.203vw;
+  width: 3.203vw;
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  animation: navigat 3s infinite;
+}
+.nav{
+  display:block;
+  position: relative;
+  height: 33.906vw;
+  width: 16.563vw;
+}
+.mirror img{
+  width: 13.516vw;
+  height: 6vw;
+}
+#c1{
+  margin-top: 4.766vw;
+  margin-left: 5.156vw;
+}
+#c2{
+  margin-top: 6.328vw;
+  margin-left: 1.016vw;
+}
+#c3{
+  margin-top: 6.328vw;
+  margin-left: 9.453vw;
+}
+#c4{
+  margin-top: 8.984vw;
+  margin-left: 5.234vw;
+}
+#c5{
+  margin-top: 12.969vw;
+  margin-left: 5.234vw;
+}
+.bar{
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+.b-bottom{
+  height: 32.891vw;
+  background: #FFFFFF;
+  opacity: 0.1;
+}
+.b-middle{
+  height: 18.952vw;
+  background: #FFFFFF;
+  opacity: 0.3;
+  margin-top: -25vw;
+}
+.b-up{
+  height: 12.344vw;
+  background: #FFFFFF;
+  margin-top: -15.234vw;
+}
+.dots{
+  margin: -7.813vw 11.719vw;
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 74.219vw;
+  height: 4.297vw;
+}
+.dot{
+  border-radius: 100px;
+  background-color: #000;
+  width: 4.297vw;
+  height: 4.297vw;
+}
+.exit{
+  position: relative;
+  width: auto;
+  height: 140.156vw;
+  z-index: 1000;
+}
+.stars-bg{
+  width:100%;
+  height:100%;
+  display:block;
+  background:#000 url(../images/stars-bg.svg) repeat top center;
+  animation: starr 3s linear infinite;
+  position: absolute;
+}
+.stars2-bg{
+  width:100%;
+  height:100%;
+  display:block;
+  background:#000 url(../images/stars-bg2.svg) repeat top center;
+  animation: starr2 6s linear infinite;
+  position: absolute;
+}
